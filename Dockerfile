@@ -3,7 +3,7 @@
 # This image provide a base for running Spring Boot based applications. It
 # provides a base Java 8 installation and Maven 3.
 
-FROM indilego/src-simple-app-docker-multilayer-image
+FROM poc-entorno-desarrollo-1/src-simple-app-docker-multilayer-image
 
 RUN git clone https://github.com/indilego/src-simple-app-docker.git /myapp/
 RUN ls
