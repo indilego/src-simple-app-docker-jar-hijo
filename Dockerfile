@@ -1,7 +1,7 @@
 FROM openshift/base-centos7
 
 ENV JAVA_HOME /usr/lib/jvm/java
-ENV JAVA_VERSON 1.8.0
+ENV JAVA_VERSION 1.8.0
 
 EXPOSE 8080
 
@@ -12,7 +12,7 @@ LABEL io.k8s.description="Platform for building and running Spring Boot applicat
 
 RUN yum update -y && \
   yum install -y curl && \
-  yum install -y java-$JAVA_VERSON-openjdk java-$JAVA_VERSON-openjdk-devel && \
+  yum install -y java-$JAVA_VERSION-openjdk java-$JAVA_VERSION-openjdk-devel && \
   yum clean all
 
 RUN git clone https://github.com/indilego/src-simple-app-docker-jar.git /opt/app-root/src/
