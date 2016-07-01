@@ -15,9 +15,9 @@ RUN yum update -y && \
   yum install -y java-$JAVA_VERSION-openjdk java-$JAVA_VERSION-openjdk-devel && \
   yum clean all
 
-RUN git clone https://github.com/indilego/src-simple-app-docker-jar.git /opt/app-root/src/
-#RUN cp -R /myapp/target/* /opt/app-root/src/target
-#RUN chown -R 1001:0 /opt/app-root
+RUN git clone https://github.com/indilego/src-simple-app-docker-jar.git /myapp/
+RUN cp -R /myapp/* /opt/app-root/src/
+RUN chown -R 1001:0 /opt/app-root
 USER 1001
 
 ENTRYPOINT ["java","-jar","/opt/app-root/src/target/app.jar"]
