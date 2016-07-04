@@ -1,7 +1,7 @@
 FROM poc-entorno-desarrollo-1/src-simple-app-docker-jar-padre
 
 #RUN cd /opt/app-root/src/git/
-RUN cp -R /opt/app-root/src/git/* .
+RUN cp -Ra /opt/app-root/src/git/* .
 #RUN ls -ltra .
 #RUN ls -ltra ./git
 RUN ls -ltra /opt/app-root/src/
