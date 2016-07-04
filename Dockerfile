@@ -1,14 +1,14 @@
 FROM poc-entorno-desarrollo-1/src-simple-app-docker-jar-padre
 
 #RUN cd /opt/app-root/src/git/
-RUN cp -Ra /opt/app-root/src/git/* .
+#RUN cp -Ra /opt/app-root/src/git/* .
 #RUN ls -ltra .
 #RUN ls -ltra ./git
-RUN ls -ltra /opt/app-root/src/
+#RUN ls -ltra /opt/app-root/src/
 #RUN cd git
-RUN pwd
-RUN ls -ltra .
-RUN git pull .
+#RUN pwd
+#RUN ls -ltra .
+RUN  cd /opt/app-root/src/git/ && git pull .
 RUN ls -ltra /opt/app-root/src/git/
 #RUN cp -R /myapp/* /opt/app-root/src/
 RUN chown -R 1001:0 /opt/app-root/src/  
