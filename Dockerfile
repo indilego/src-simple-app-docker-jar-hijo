@@ -4,7 +4,7 @@ FROM poc-entorno-desarrollo-1/src-simple-app-docker-jar-padre
 RUN ls -ltra .
 RUN ls -ltra ./git
 RUN ls -ltra /opt/app-root/src/git/
-RUN cd /opt/app-root/src/git
+RUN cd git
 RUN pwd
 RUN ls -ltra .
 RUN git pull .
