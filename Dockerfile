@@ -1,6 +1,7 @@
 FROM poc-entorno-desarrollo-1/src-simple-app-docker-jar-padre
 
-RUN  cd /opt/app-root/src/git/ && git pull -f 
+RUN  cd /opt/app-root/src/git/ && git pull -f
+RUN chmod -R 777 .
 RUN chown -R 1001:0 /opt/app-root/src/  
 USER 1001 
 
