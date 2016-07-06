@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.jboss.tools.openshift.Connection=https\://joe@ec2-52-51-5-210.eu-west-1.compute.amazonaws.com\:8443
+org.jboss.tools.openshift.DeployProject=springboot-sample-app
+org.jboss.tools.openshift.PodPath=/opt/app-root/src
+org.jboss.tools.openshift.Service=poc-entorno-desarrollo-1@src-simple-app-docker-ja
+org.jboss.tools.openshift.SourcePath=${workspace_loc\:/springboot-sample-app}
